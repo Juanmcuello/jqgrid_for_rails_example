@@ -1,0 +1,10 @@
+<h1>Listing invoices</h1>
+
+<table id=invoices_list></table>
+<div id=invoices_pager></div>
+
+<% content_for :head do %>
+  <%= raw(invoices_jqgrid) %>
+<% end %>
+
+<br />
