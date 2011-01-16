@@ -1,14 +1,16 @@
 == Jqgrid For Rails sample application
 
-This is a sample application that uses jqgrid_for_rails plugin.
+This is a <b>Rails 3</b> sample application that uses
+jqgrid_for_rails[http://github.com/Juanmcuello/jqgrid_for_rails] plugin.
+
 
 == Installation
 
-  $ git clone git@github.com:Juanmcuello/jqgrid_for_rails_example.git
+  $ git clone git://github.com/Juanmcuello/jqgrid_for_rails_example.git
 
-  $ cd APP_PATH
+  $ cd jqgrid_for_rails_example
 
-  $ rails plugin install git@github.com:Juanmcuello/jqgrid_for_rails.git
+  $ rails plugin install git://github.com/Juanmcuello/jqgrid_for_rails.git
 
   $ rake db:create
 
