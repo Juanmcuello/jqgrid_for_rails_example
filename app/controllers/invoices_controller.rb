@@ -5,16 +5,13 @@ class InvoicesController < ApplicationController
 
     @columns = ['invid', 'invdate', 'amount', 'tax', 'total', 'note']
 
-    order = "#{params[:sidx]} #{params[:sord]}"
-
     @invoices = Invoice.paginate(
-      :page => params[:page],
+      :page     => params[:page],
       :per_page => params[:rows],
-      :order => (order unless order.blank?))
+      :order    => order_by_from_params(params))
 
     if request.xhr?
-      json = json_for_jqgrid(@invoices, @columns, {:page => params[:page]})
-      render :json => json
+      render :json => json_for_jqgrid(@invoices, @columns)
     end
 
   end
