@@ -16,4 +16,12 @@ class InvoicesController < ApplicationController
 
   end
 
+ def update
+    @invoice = Invoice.find_by_id(params[:id])
+    @invoice.update_attributes({:amount => params[:amount]})
+
+    if request.xhr?
+      render :json => @invoice
+    end
+ end
 end

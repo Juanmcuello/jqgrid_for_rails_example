@@ -12,13 +12,14 @@ module InvoicesHelper
       :mtype => 'GET',
       :colNames => ['Inv No','Date', 'Amount','Tax','Total','Notes'],
       :colModel  => [
-        { :name => 'invid',   :index => 'invid',    :width => 55 },
+        { :name => 'invid',   :index => 'invid',    :width => 55},
         { :name => 'invdate', :index => 'invdate',  :width => 190 },
-        { :name => 'amount',  :index => 'amount',   :width => 80,   :align => 'right' },
+        { :name => 'amount',  :index => 'amount',   :width => 80,   :align => 'right', :editable => true},
         { :name => 'tax',     :index => 'tax',      :width => 80,   :align => 'right' },
         { :name => 'total',   :index => 'total',    :width => 80,   :align => 'right' },
         { :name => 'note',    :index => 'note',     :width => 150,  :sortable => false }
       ],
+      :editurl => '/invoices/update',
       :pager => '#invoices_pager',
       :rowNum => 10,
       :rowList => [10, 20, 30],

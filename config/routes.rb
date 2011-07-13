@@ -1,6 +1,10 @@
 JqgridForRailsExample::Application.routes.draw do
   resources :invoices
 
+  # Custom routes due to jqgrid non RESTful behaviour
+  match 'invoices/update/', :controller => 'invoices', :action => 'update'
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
