@@ -30,7 +30,9 @@ module InvoicesHelper
       :onSelectRow => "function() { alert('Row selected!');}".to_json_var
     }]
 
-    pager = [:navGrid, "#invoices_pager", {:del => true }, {}, {}, {:closeOnEscape => true}]
+    # See http://www.trirand.com/jqgridwiki/doku.php?id=wiki:navigator
+    # ('navGrid','#gridpager',{parameters}, prmEdit, prmAdd, prmDel, prmSearch, prmView)
+    pager = [:navGrid, "#invoices_pager", {:del => true}, {:closeAfterEdit => true, :closeOnEscape => true}, {}, {}, {}, {}]
 
     pager_button = [:navButtonAdd, "#invoices_pager", {:caption => 'Add', :onClickButton => 'function() {alert("Custom button!")}'.to_json_var }]
 
