@@ -2,20 +2,11 @@
 <html>
 <head>
   <title>JqgridForRailsExample</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
 
-  <%= stylesheet_link_tag 'jquery/ui-lightness/jquery-ui-1.8.6.custom.css' %>
-  <%= stylesheet_link_tag 'jquery/ui.jqgrid.css' %>
-  <%= stylesheet_link_tag 'scaffold' %>
-
-  <%= javascript_include_tag 'jquery/jquery-1.6.1.min.js' %>
-  <%= javascript_include_tag 'jquery/i18n/grid.locale-en.js' %>
-  <%= javascript_include_tag 'jquery/jquery.jqGrid.min.js' %>
-  <%= javascript_include_tag 'jquery/jquery-ui-1.8.6.custom.min.js' %>
-
-  <%= csrf_meta_tag %>
-
-  <%= yield :head %>
-
+  <%= yield :head if content_for?(:head)%>
 </head>
 <body>
 

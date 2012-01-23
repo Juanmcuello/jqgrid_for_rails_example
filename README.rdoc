@@ -1,7 +1,7 @@
 == Jqgrid For Rails sample application
 
-This is a <b>Rails 3</b> sample application that uses
-jqgrid_for_rails[http://github.com/Juanmcuello/jqgrid_for_rails] plugin.
+This is a <b>Rails 3.2</b> sample application that uses
+jqgrid_for_rails[http://github.com/Juanmcuello/jqgrid_for_rails] gem.
 
 
 == Installation
@@ -10,10 +10,10 @@ jqgrid_for_rails[http://github.com/Juanmcuello/jqgrid_for_rails] plugin.
 
   $ cd jqgrid_for_rails_example
 
-  $ rails plugin install git://github.com/Juanmcuello/jqgrid_for_rails.git
+  $ bundle install
 
-  $ rake db:create
+  $ bundle exec rake db:create
 
-  $ rake db:migrate
-  
-  $ rails server
+  $ bundle exec rake db:migrate
+
+  $ bundle exec rails s

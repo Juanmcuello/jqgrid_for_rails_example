@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-JqgridForRailsExample::Application.config.secret_token = '617aa85ef4168df2486915d3957f187cb056f15dc4ed1a1d132b2b31604018bf74619aa4bba9facbd2c448a1ce4d5d256f60640db250af6116d64d36751403db'
+JqgridForRailsExample::Application.config.secret_token = '3a49596e853207de2322b4df1a8c31767c8625ca8572c9c8853878e4fb858d19cde048a8d2f3587f7b810b5f8b2701340f99bd291a4d7c907f4b62bd35e8ada2'
