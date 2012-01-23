@@ -17,3 +17,5 @@ jqgrid_for_rails[http://github.com/Juanmcuello/jqgrid_for_rails] gem.
   $ bundle exec rake db:migrate
 
   $ bundle exec rails s
+
+  Go to: http://localhost:3000
