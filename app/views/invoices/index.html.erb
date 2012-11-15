@@ -3,6 +3,12 @@
 <table id=invoices_list></table>
 <div id=invoices_pager></div>
 
+<script>
+  function myFormatter ( cellvalue, options, rowObject ) {
+    return 'Total is: ' + rowObject[4];
+  }
+</script>
+
 <% content_for :head do %>
   <%= raw(invoices_jqgrid) %>
 <% end %>

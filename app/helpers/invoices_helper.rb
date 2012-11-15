@@ -17,7 +17,7 @@ module InvoicesHelper
         { :name => 'amount',  :index => 'amount',   :width => 80,   :align => 'right', :editable => true},
         { :name => 'tax',     :index => 'tax',      :width => 80,   :align => 'right' },
         { :name => 'total',   :index => 'total',    :width => 80,   :align => 'right' },
-        { :name => 'note',    :index => 'note',     :width => 150,  :sortable => false }
+        { :name => 'note',    :index => 'note',     :width => 150,  :sortable => false, :formatter => 'myFormatter'.to_json_var }
       ],
       :editurl => '/invoices/update',
       :pager => '#invoices_pager',
