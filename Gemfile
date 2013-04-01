@@ -6,7 +6,7 @@ gem 'rails', '~> 3.2'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-gem 'jqgrid_for_rails'
+gem 'jqgrid_for_rails', git: 'git://github.com/Juanmcuello/jqgrid_for_rails.git'
 gem 'will_paginate'
 
 # Gems used only for assets and not required
